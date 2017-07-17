@@ -331,20 +331,79 @@ transform:translateY(0);
    6.Benefits
    ========================================================================== */
    
-.benefits { padding: 1em 0 5em 0 !important; }
+/*.benefits { padding: 1em 0 5em 0 !important; }*/
 
-.benefits img { margin-bottom: .75em; }
-
-.benefits p { color: #8A8A8A; }
+.benefits p { 
+  color: #8A8A8A; 
+  padding-right: 25px;
+}
 
 .benefits div[class^="col-"]:nth-child(1),
 .benefits div[class^="col-"]:nth-child(2),
 .reviews div[class^="col-"]:nth-child(1),
 .reviews div[class^="col-"]:nth-child(2),
 .team div[class^="col-"]:nth-child(1),
-.team div[class^="col-"]:nth-child(2) { padding-bottom: 1.5em; }
+/*.team div[class^="col-"]:nth-child(2) { padding-bottom: 1.5em; }*/
 
 .benefits div[class^="col-"] > p:last-child { margin-bottom: 0; }
+
+.stack-description {
+  padding: 1em 0 5em 0 !important;
+}
+
+.stack-description h4,
+.stack-description h5,
+.stack-description p {
+  margin-bottom: 28px;
+}
+
+.stack-description h5,
+.stack-description p { font-weight: 400 !important; }
+
+.hipster:hover {
+  background-color: rgba(78,136,27,1);
+  color: #fff !important;
+}
+
+.hipster:hover h4,
+.hipster:hover h5,
+.hipster:hover p {
+  color: #fff !important;
+}
+
+.hacker:hover {
+  background: rgba(78,136,27,1) ;
+  color: #fff !important;
+}
+
+.hacker:hover h4,
+.hacker:hover h5,
+.hacker:hover p {
+  color: #fff !important;
+}
+
+.hyper:hover {
+  background-color: rgba(78,136,27,1);
+  color: #fff !important;
+}
+
+.hyper:hover h4,
+.hyper:hover h5,
+.hyper:hover p {
+  color: #fff !important;
+}
+
+.hustler:hover {
+  background-color: rgba(78,136,27,1);
+  color: #fff !important;
+}
+
+.hustler:hover h4,
+.hustler:hover h5,
+.hustler:hover p {
+  color: #fff !important;
+}
+
 
 /* ==========================================================================
    7.Features
