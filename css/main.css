@@ -43,7 +43,7 @@ body {
 p {
   font-weight: 400;
   color: #fff;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 h1,
@@ -162,6 +162,35 @@ strong { font-weight: 600; }
   color: #fff;
   outline: none;
   background-color: #285238;
+}
+
+.hero-section .btn {
+  padding: 1em 2em;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #FFCE00;
+  line-height: 1.35;
+  border: none;
+  border-radius: 3px;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-section a:hover {
+  color: #fff;
+  background-color: #7ac043;
+}
+
+.hero-section a:active,
+.hero-section a:focus,
+.hero-section a:active:hover,
+.hero-section a:active:focus {
+  color: #fff;
+  outline: none;
+  background-color: #7ac043;
 }
 
 .cta-btn p {
@@ -702,6 +731,12 @@ transform:translateY(0);
 }
 .sub-form .form-control:-ms-input-placeholder {
  color: gray;
+}
+
+.sub-form p {
+  color: gray;
+  font-size: 10px;
+  margin-top: 15px;
 }
 
 .sub-form .form-control {
