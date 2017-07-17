@@ -42,7 +42,7 @@ body {
 
 p {
   font-weight: 400;
-  color: #7ac043;
+  color: #fff;
   font-size: 17px;
 }
 
@@ -94,7 +94,7 @@ strong { font-weight: 600; }
    ========================================================================== */ 
    
 .hero-section {
-  background: url(../img/bg.jpg) center center no-repeat scroll;
+  background: url(../img/bg.jpg) center center no-repeat fixed;
   background-size: cover;
   padding: 0 0 4.5em;
   position: relative;
@@ -120,27 +120,29 @@ strong { font-weight: 600; }
 .welcome-message { margin-top: 4.5em; }
 
 .welcome-message h1 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 36px;
   color: #fff;
-  font-weight: 400;
+  font-weight: 800;
   margin: 0 0 24px;
 }
 
 .welcome-message h2 {
-  font-size: 22px;
+  font-size: 18px;
   color: #fff;
   font-weight: 400;
   margin: 0;
+  margin-bottom: 45px;
 }
 
 .btn {
-  padding: 1em 3em;
+  padding: 1em 2em;
   color: #fff;
   font-size: 18px;
   text-align: center;
   text-decoration: none;
-  background-color: #f56363;
-  line-height: 1.5;
+  background-color: #78a300;
+  line-height: 1.35;
   border: none;
   border-radius: 3px;
   font-weight: 400;
@@ -150,7 +152,7 @@ strong { font-weight: 600; }
 
 .btn:hover {
   color: #fff;
-  background-color: #fa5454;
+  background-color: #285238;
 }
 
 .btn:active,
@@ -159,7 +161,7 @@ strong { font-weight: 600; }
 .btn:active:focus {
   color: #fff;
   outline: none;
-  background-color: #fa5454;
+  background-color: #285238;
 }
 
 .cta-btn p {
@@ -204,7 +206,7 @@ strong { font-weight: 600; }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus { color: #fff; }
 
-.navbar-default.stuck .navbar-nav>li>a { color: #4c4c4c; }
+.navbar-default.stuck .navbar-nav>li>a { color: #fff; }
 
 .navbar-default.stuck .navbar-nav > li > a:hover,
 .navbar-default.stuck .navbar-nav > li > a:focus { color: #4c4c4c; }
@@ -220,17 +222,17 @@ strong { font-weight: 600; }
 
 .navbar-default.stuck .navbar-nav .btn:hover,
 .navbar-default.stuck .navbar-nav .btn:focus {
-  background: #fa5454!important;
+  background: #78a300!important;
   color: #fff;
 }
 
 .navbar-default.stuck {
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 10;
-  background-color: rgba(255, 255, 255, 0.97);
+  background-color: transparent;
   box-shadow: 0 1px 12px 0px rgba(51, 51, 51, 0.23);
   -webkit-animation: fadeInDown 1s both;
   animation: fadeInDown 1s both;
@@ -279,9 +281,10 @@ transform:translateY(0);
    
  
 
-.section-header { margin-bottom: 3em; }
+.section-header { margin-bottom: 3em; align-items: left }
 
 .section-header h2 {
+  color: #fff;
   font-size: 24px;
   font-weight: 600;
   margin-top: 0;
@@ -293,7 +296,15 @@ transform:translateY(0);
   margin: 0;
 }
 
-.featured-on,
+.featured-on { 
+  background: rgba(78,136,27,1);
+  background: -webkit-linear-gradient(left, rgba(78,136,27,1) 0%, rgba(132,195,5,1) 100%);
+  background: -moz-linear-gradient(left, rgba(78,136,27,1) 0%, rgba(132,195,5,1) 100%);
+  background: -o-linear-gradient(left, rgba(78,136,27,1) 0%, rgba(132,195,5,1) 100%);
+  background: linear-gradient(to right, rgba(78,136,27,1) 0%, rgba(132,195,5,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e881b', endColorstr='#84c305', GradientType=1 );
+}
+
 .features,
 .tour,
 .site-footer { background-color: rgba(0, 0, 0, 0.03); }
@@ -320,7 +331,7 @@ transform:translateY(0);
    6.Benefits
    ========================================================================== */
    
-
+.benefits { padding: 1em 0 5em 0 !important; }
 
 .benefits img { margin-bottom: .75em; }
 
@@ -770,22 +781,22 @@ blockquote cite {
    
 
  .form-control::-webkit-input-placeholder {
- color: #8A8A8A;
+ color: #fff;
 }
  .form-control:-moz-placeholder {
- color: #8A8A8A;
+ color: #fff;
 }
  .form-control::-moz-placeholder {
- color: #8A8A8A;
+ color: #fff;
 }
  .form-control:-ms-input-placeholder {
- color: #8A8A8A;
+ color: #fff;
 }
 
 .form-control {
-  background-color: #fff;
-  border: 1px solid #f56363;
-  color: #4c4c4c;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
   box-shadow: none;
   height: 60px;
   font-weight: 400;
@@ -794,7 +805,7 @@ blockquote cite {
 }
 
 .form-control:focus {
-  border-color: #fa5454;
+  border-color: #fff;
   outline: 0;
   box-shadow: none;
 }
@@ -954,13 +965,13 @@ blockquote cite {
    
 @media (min-width: 768px) {
 
-.hero-section { padding: 0 0 7.5em; }
+.hero-section { padding: 0 0 5.5em; background-attachment: fixed;}
 
 .welcome-message { margin-top: 8.25em; }
 
-.welcome-message h1 { font-size: 44px; }
+.welcome-message h1 { font-size: 40px; }
 
-.welcome-message h2 { font-size: 23px; }
+.welcome-message h2 { font-size: 18px; }
 
 .play-btn { margin: 3em 0; }
 
@@ -1021,6 +1032,7 @@ blockquote::before {
   .hero-section {
     padding: 3em 0 12.75em;
     background: none;
+    background-attachment: fixed;
   }
 
   .hero-section::before { display: none; }
@@ -1047,11 +1059,11 @@ blockquote::before {
 
   .nav-left { padding-left: 3em; }
 
-  .welcome-message { margin-top: 7.5em; }
+  .welcome-message { margin-top: 5.5em; }
 
   .welcome-message h1 { font-size: 56px; }
 
-  .welcome-message h2 { font-size: 24px; }
+  .welcome-message h2 { font-size: 20px; }
 
   .play-btn { margin: 4.5em 0; }
 

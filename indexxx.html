@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gama experience #8</title>
+</head>
+<body>
+
+	<div class="signup">
+	    <h2 class="signup-title">Sign up for beta</h2>
+	    <p id="signup-success" class="text-success"></p>
+	    <p id="signup-error" class="text-danger"></p>
+	    <form class="signup-form form-inline" id="signup-form" role="form" onsubmit="return signup(this)">
+	        <input class="form-control" name="email" type="email" placeholder="Your email. eg., joe@acme.com" required>
+	        <input class="form-control" type="text" name="name" required>
+	        <input class="form-control" type="text" name="celphone">
+	        <button class="btn btn-success" id="signup-button" type="submit" >Join now</button>
+	    </form>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
+	<script type="text/javascript" src="./index.js"></script>
+
+
+</body>
+</html>
