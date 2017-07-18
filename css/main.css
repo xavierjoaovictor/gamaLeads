@@ -760,7 +760,7 @@ transform:translateY(0);
 .sub-form .form-control {
   background-color: #fff;
   border: 1px solid #fff;
-  color: #fff;
+  color: black;
   box-shadow: none;
   height: 60px;
   font-weight: 400;
