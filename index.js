@@ -46,7 +46,7 @@ $( document ).ready(function() {
     var email = $('#emailForm');
     var celular = $('#celphone');
 
-    if (name.val().length >= 3) {
+    if (validName(name.val())) {
       if (is_email(email.val())) {  
           firebase.database().ref('leads/').push({
                 Nome: name.val(),
@@ -77,5 +77,12 @@ $( document ).ready(function() {
 		  return false;
     }
     else { return true; }
+  }
+
+  function validName(name){
+    if (name.split(' ').length > 1){
+      return true;
+    }
+    return false;
   }
 });

@@ -758,7 +758,7 @@ transform:translateY(0);
 .sub-form { background: rgba(124,35,140,1); }
 
 .sub-form .form-control {
-  background-color: transparent;
+  background-color: #fff;
   border: 1px solid #fff;
   color: #fff;
   box-shadow: none;
