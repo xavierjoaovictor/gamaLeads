@@ -133,7 +133,7 @@
     <div class="row">
       <div class="col-md-6">
         <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/174618297"></iframe>
+          <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/175664625"></iframe>
         </div>
       </div>
       <div class="col-md-6">
@@ -173,29 +173,55 @@
       <div class="col-sm-3 stack-description hipster">
         <h4>Hipster</h4>
         <h5>Design</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        <p>Briefing, Branding, Design de Interação, Design Thinking, fazem parte do seu vocabulário? Já te disseram: 
+          “Meu sobrinho também faz isso pela metade do preço”? Está fazendo 237 freelas e sempre pedem “uma alteraçãozinha rapidão”? 
+          Você se encaixa então como um Hipster no Gama Experience, tendo a oportunidade de evoluir ainda mais seu potencial.</p>
       </div>
       <div class="col-sm-3 stack-description hacker">
         <h4>Hacker</h4>
         <h5>Desenvolvimento</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        <p>Você manja de códigos, criar sites, resolver bugs? As pessoas sempre lembram de você quando precisam formatar o computador? 
+          Seu consumo de café é superior a 80% da população? Então você se enquadra como um Hacker, e será capaz, através do programa, 
+          de desenvolver suas habilidades de Desenvolvimento Ágil, Scrum e diversas outras metodologias e ferramentas!</p>
       </div>
       <div class="col-sm-3 stack-description hyper">
         <h4>Hyper</h4>
         <h5>Marketing</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        <p>Para você o Facebook é também uma ferramenta de trabalho? Curte fazer testes, testes e mais um pouco de testes? 
+          Batalha a ferro e fogo para estar nos primeiros lugares do Google? Seu lugar é como Hyper! Aqui você vai desenvolver seus 
+          conhecimentos em SEO/SEM, Growht Hacking, Inbound Marketing e diversas outras coisas para alimentar suas planilhas e claro,
+           trazer conversões!</p>
       </div>
       <div class="col-sm-3 stack-description hustler">
         <h4>Hustler</h4>
         <h5>Vendas</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        <p>Seu poder de argumentação é digno de um advogado renomado? Você consegue fazer parcerias, entender o problema do seu 
+          cliente e resolver em tempo Usain Bolt? Participe do Gama Experience como Hustler e aprenda mais sobre Customer Success, 
+          Inside Sales, Spin Selling e muito mais!</p>
       </div>
     </div>
   </div>
 </section>
 
 <!--benefits end--> 
+
+<!--cta section-->
+
+<section class="cta-section section-spacing text-center">
+  <div class="container">
+    <header class="section-header">
+      <h2>Saia na frente de milhares de pessoas!</h2>
+      <h3>Receba por e-mail dicas de como se aperfeiçoar para o próximo Gama Experience.</h3>
+    </header>
+    <div class="row">
+      <div class="col-md-12"> <a href="#cta-form" class="btn">EU QUERO!</a>
+        <p>Inscrições por tempo limitado.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--cta section end--> 
 
 <!--Video section-->
 
@@ -304,47 +330,31 @@
 
 <!--Team end--> 
 
-<!--cta section-->
-
-<section class="cta-section section-spacing text-center">
-  <div class="container">
-    <header class="section-header">
-      <h2>Saia na frente de milhares de pessoas!</h2>
-      <h3>Receba por e-mail dicas de como se aperfeiçoar para o próximo Gama Experience.</h3>
-    </header>
-    <div class="row">
-      <div class="col-md-12"> <a href="#cta-form" class="btn">EU QUERO!</a>
-        <p>Inscrições por tempo limitado.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--cta section end--> 
-
 <!--sub-form-->
 <section class="sub-form section-spacing text-center" id="cta-form">
   <div class="container">
     <header class="section-header">
-      <h3>Tenha mais chances do que os outros (TROCAR)</h3>
+      <h3>Garanta já sua pré inscrição!</h3>
+      <h4>Assine nossa newsletter e receba conteúdos personalizados.</h4>
     </header>
     <div class="row">
       <div class="col-md-6 center-block col-sm-11">
 
-        <form class="signup-form" id="signup-form" role="form" onsubmit="return signup(this)">
+        <div class="signup-form" id="signup-form" role="form">
             <div class="form-group">
-              <input class="form-control" type="text" name="name" placeholder="Nome" required>
+              <input class="form-control" type="text" name="name" id="nameForm" placeholder="Nome">
             </div>
             <div class="form-group">
-              <input class="form-control" name="email" type="email" placeholder="Email" required>
+              <input class="form-control" name="email" type="email" id="emailForm" placeholder="Email">
             </div>
             <div class="form-group">
               <input class="form-control" type="text" name="celphone" id="celphone" placeholder="Telefone (Opcional)">
             </div>
-            <button class="btn btn-default" id="signup-button" type="submit" >INSCREVER</button>
+            <button class="btn btn-default" id="signup-button" >INSCREVER</button>
           </div>
-      </form>
-      <p>Nós não mandamos spam!</p>
+      </div>
+      <span><p id="form-success"></p></span>
+      <p>Não se preocupe, nós não mandamos spam!</p>
       </div>
     </div>
   </div>
@@ -355,11 +365,9 @@
 <footer class="site-footer section-spacing text-center">
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
-        <p class="footer-links"><a href="http://csmthemes.com/themes/launch/video/">Terms of Use</a> <a href="http://csmthemes.com/themes/launch/video/">Privacy Policy</a></p>
-      </div>
-      <div class="col-md-4"> <small>© 2017 Gama. Todos os direitos reservados.</small></div>
-      <div class="col-md-4"> 
+      
+      <div class="col-md-6"> <small>© 2017 LeadLegends. Todos os direitos reservados.</small></div>
+      <div class="col-md-6"> 
         <!--social-->
         
         <ul class="social">
@@ -385,8 +393,9 @@
 <script src="./js/retina.min.js"></script> 
 <script src="./js/jquery.magnific-popup.min.js"></script> 
 <script src="./js/jquery.ajaxchimp.min.js"></script> 
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
 <script src="./js/main.js"></script>
-<script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script type="text/javascript" src="./index.js"></script>
 
 </body>

@@ -152,7 +152,7 @@ strong { font-weight: 600; }
 
 .btn:hover {
   color: #fff;
-  background-color: #285238;
+  background-color: #FFCE00;
 }
 
 .btn:active,
@@ -170,7 +170,8 @@ strong { font-weight: 600; }
   font-size: 18px;
   text-align: center;
   text-decoration: none;
-  background-color: #FFCE00;
+  background-color: #7ac043;
+  /* background-color: #FFCE00; */
   line-height: 1.35;
   border: none;
   border-radius: 3px;
@@ -181,7 +182,7 @@ strong { font-weight: 600; }
 
 .hero-section a:hover {
   color: #fff;
-  background-color: #7ac043;
+  background-color: #FFCE00;
 }
 
 .hero-section a:active,
@@ -618,7 +619,8 @@ transform:translateY(0);
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(78,136,27,.8);
+  background-color: #7C238C;
+  opacity: .8;
   transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
   -webkit-transform: translate3d(0, 100%, 0);
@@ -654,9 +656,9 @@ transform:translateY(0);
 .team-details .social { margin-top: .75em; }
 
 .team-details .social li a {
-  color: rgba(78,136,27,1);
+  color: #7C238C;
   background-color: #fff;
-  border: 1px solid rgba(78,136,27,1);
+  border: 1px solid #7C238C;
   width: 55px;
   height: 55px;
   line-height: 55px;
@@ -665,7 +667,7 @@ transform:translateY(0);
 
 .team-details .social li a:hover {
   color: #fff;
-  background-color: rgba(78,136,27,1);
+  background-color: #7C238C;
   border: 1px solid #fff;
 }
 
@@ -739,10 +741,15 @@ transform:translateY(0);
   margin-top: 15px;
 }
 
+.sub-form h4 { color: #fff !important; font-weight: 400;}
+.sub-form h3 { color: #fff !important;} 
+
+.sub-form { background: rgba(124,35,140,1); }
+
 .sub-form .form-control {
   background-color: transparent;
-  border: 1px solid rgba(78,136,27,1);
-  color: rgba(78,136,27,1);
+  border: 1px solid #fff;
+  color: #fff;
   box-shadow: none;
   height: 60px;
   font-weight: 400;
@@ -751,7 +758,7 @@ transform:translateY(0);
 }
 
 .form-control:focus {
-  border-color: rgba(78,136,27,1);
+  border-color: #fff;
   outline: 0;
   box-shadow: none;
 }
