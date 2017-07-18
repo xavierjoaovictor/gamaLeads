@@ -18,7 +18,6 @@ $( document ).ready(function() {
 
   axios.get('https://api.ipify.org?format=json').then(function (response) {
       leadIP = response.data.ip;
-      console.log(leadIP);
     }).catch(function(error) {
       console.log(error);
   });
@@ -31,7 +30,6 @@ $( document ).ready(function() {
         field.mask(SPMaskBehavior.apply({}, arguments), options);
       }
   };
-
   $('#celphone').mask(SPMaskBehavior, spOptions);
 
   var onSignupComplete = function(error) {
