@@ -12,8 +12,6 @@ $( document ).ready(function() {
   firebase.initializeApp(config);
   var database = firebase.database();
 
-  var signupForm = document.getElementById('signup-form');
-  var formSuccess = document.getElementById('form-success');
   var leadIP;
 
   axios.get('https://api.ipify.org?format=json').then(function (response) {
@@ -40,8 +38,10 @@ $( document ).ready(function() {
     }
   };
 
-  $('#signup-button').click(function signup() {
+  $('#signup-button').click(subscribe);
+  $('#signup-button2').click(subscribe);
 
+  function subscribe(){
     var name = $('#nameForm');
     var email = $('#emailForm');
     var celular = $('#celphone');
@@ -68,7 +68,7 @@ $( document ).ready(function() {
       } else {
         alert("Coloque um nome válido!");
       }
-  });
+  }
 
   function is_email(email){
 	  er = /^[a-zA-Z0-9][a-zA-Z0-9\.-]+@([a-zA-Z0-9\.-]+\.)[a-zA-Z-0-9]{2,3}/; 

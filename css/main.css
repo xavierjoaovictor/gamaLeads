@@ -987,6 +987,58 @@ blockquote::before {
 .modal button.close { right: 0; }
 }
 
+
+/* ==========================================================================
+   Hero SubForm
+   ========================================================================== */
+
+#formulario {
+  background-color: #fff;
+  padding: 2em;
+  margin: 0;
+}
+
+#formulario button {
+  height: 40px;
+  padding: 5px 30px;
+  font-size: 1.3rem;
+}
+
+#formulario h2 {
+  font-weight: 400;
+  font-size: 2.3rem;
+  color: #212121;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+#formulario h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #313131;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+}
+
+#signup-hero input {
+  margin-bottom: 15px;
+  padding: 10px;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #e1e1e1;
+  color: #212121;
+  font-weight: 400;
+  font-size: 1.3rem;
+  width: 90%;
+}
+
+#signup-hero { margin-top: 15px; }
+
+
+
 /* ==========================================================================
    20.Medium devices (desktops, 992px and up) 
    ========================================================================== */
