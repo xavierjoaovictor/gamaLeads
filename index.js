@@ -28,7 +28,7 @@ $( document ).ready(function() {
         field.mask(SPMaskBehavior.apply({}, arguments), options);
       }
   };
-  $('#celphone').mask(SPMaskBehavior, spOptions);
+  $('#PhoneInput').mask(SPMaskBehavior, spOptions);
 
   var onSignupComplete = function(error) {
     if (error) {
@@ -38,13 +38,12 @@ $( document ).ready(function() {
     }
   };
 
-  $('#signup-button').click(subscribe);
-  $('#signup-button2').click(subscribe);
+  $('#sFormButtonSubmit').click(subscribe);
 
   function subscribe(){
-    var name = $('#nameForm');
-    var email = $('#emailForm');
-    var celular = $('#celphone');
+    var name = $('#NameInput');
+    var email = $('#EmailInput');
+    var celular = $('#PhoneInput');
 
     if (validName(name.val())) {
       if (is_email(email.val())) {  
