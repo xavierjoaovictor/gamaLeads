@@ -35,10 +35,11 @@ $( document ).ready(function() {
       console.log(error);
     } else {
       $('#form-success').text('Obrigado por se cadastrar!');
+      alert("Obrigado por se cadastrar!");
     }
   };
 
-  $('#sFormButtonSubmit').click(subscribe);
+  $('#FormButtonSubmit').click(subscribe);
 
   function subscribe(){
     var name = $('#NameInput');
