@@ -15,6 +15,16 @@ body, html {
   margin-left: auto;
   margin-right: auto;
 }
+
+#alunos {
+  font-size: 40px;
+  padding-top: 30px;
+}
+
+#contratados {
+  color: #FFA600;
+}
+
 #MainContainer {
   z-index: 1;
 
@@ -61,7 +71,7 @@ body, html {
   #MainHeader {
     display: flex;
     justify-content: space-between;
-    padding-top: 10px;
+    padding-top: 20px;
     #HeaderLogo {
       font-family: 'Montserrat', Arial;
       text-align: center;
@@ -245,12 +255,14 @@ body, html {
     }
 
     .description-header {
-      font-weight: 800;
+      font-weight: 700;
+      font-size: 20px;
       text-transform: uppercase;
     }
 
     .description-text {
-      font-weight: 400; 
+      font-weight: 400;
+      font-size: 15px; 
       margin-top: 10px;
     }
   }
