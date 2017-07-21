@@ -30,6 +30,14 @@ $( document ).ready(function() {
   };
   $('#PhoneInput').mask(SPMaskBehavior, spOptions);
 
+  var leadRef = firebase.database().ref('leads/').on('value', function(snapshot) {
+    var array = $.map(snapshot.val(), function(value, index) {
+      return [value];
+    });
+
+    document.getElementById('leadsCount').innerHTML = array.length;
+  });
+
   var onSignupComplete = function(error) {
     if (error) {
       console.log(error);

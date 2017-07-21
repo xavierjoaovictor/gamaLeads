@@ -270,4 +270,10 @@ body, html {
       #Footer p {
         font-size: 10px; } }
 
+#Leads {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+
 /*# sourceMappingURL=index.css.map */
