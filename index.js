@@ -35,7 +35,7 @@ $( document ).ready(function() {
       return [value];
     });
 
-    document.getElementById('leadsCount').innerHTML = array.length;
+    document.getElementById('leadsCount').innerHTML = " " + array.length;
   });
 
   var onSignupComplete = function(error) {

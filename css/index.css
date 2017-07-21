@@ -280,6 +280,16 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center; }
+  align-content: center; 
+  height: 100vh;
+}
+
+#Leads h1 {
+  font-size: 8rem;
+}
+
+#Leads h2 {
+  font-size: 4rem;
+}
 
 /*# sourceMappingURL=index.css.map */
